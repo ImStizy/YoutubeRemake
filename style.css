@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+/*
+---------------
+YT Black Color
+#282828
+---------------
+YT Red Color
+#FF0000
+---------------
+*/
+
+*{
+    background: #282828;
+}
+html{
+    width: fit-content;
+    height:fit-content;
+}
+@media screen and (max-width: 1768px){
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    ::-webkit-scrollbar-track{
+        display: none;
+    }
+
+    .DepoisDoSlider{
+        /*
+        display: none;
+        */
+        transition-delay: 1.4s;
+        animation: 3s;
+    }
+    .ItensBaixo{
+        display: none;
+    }
+
+    /* Slider Inicial */
+    .FrontSliderBG{
+        width:100%;
+        height: 100%;
+        transition: 1.3s ease-in-out;
+        background: #282828;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+    }
+    .YtLogo1{
+        background: none;
+        position: relative;
+        transform: scale(0.3);
+        top:-5%;
+    }
+    .YtText1{
+        font-family: 'Oswald';
+        background: none;
+        color: white;
+        font-size: 80px;
+        position: relative;
+        top: -290px;
+        cursor: default;
+    }
+    #SetaCima.fas.fa-angle-up, .fa-angle-up::before{
+        height: fit-content;
+        width: fit-content;
+    }
+    #SetaCima{
+        width: 100%;
+        height: 100%;
+        color: white;
+        transform: scale(4) translateX(0.2px);
+        position: relative;
+        background: none;
+    }
+    .BotaoCima{
+        width: 50px;
+        height: 50px;
+        outline: none;
+        position: relative;
+        top: -340px;
+        background: none;
+        border-radius: 50%;
+    }
+    /* Slider Inicial */
+    /* Barra de cima com pesquisa */
+    .BarraCima{
+        position: absolute;
+        width: 100%;
+        height: 53px;
+        left: 0%;
+        top: 0%;
+        background: #303030;
+        border-bottom: 2px solid #1f1f1f;
+        transform: translateY(-60px);
+        transition: 1.5s ease-out;
+        transition-delay: 1.4s;
+        animation: 1.5s ease-out;
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    /* Ícones da barra de cima */
+    #Listras, .ListrasBTN{
+        color: white;
+        transform: scale(1.3);
+        width: fit-content;
+        height: fit-content;
+        outline: none;
+        background: none;
+        border: none;
+    }
+    #Listras{
+        margin-left: 18px;
+        position: relative;
+        transform: scale(1.8) translateY(2.5px) translateX(9px) translateZ(0);
+        cursor: default;
+    }
+    .ListrasBTN{
+        width: 25px;
+        height: 24px;
+        position: absolute;
+        background: none;
+        outline: none;
+        transform: translateX(-3.5px) translateZ(1ch);
+        background: none;
+    }
+
+    .TextoYtBarraDeCima{
+        display: inline-flex;
+        font-family: 'Oswald', sans-serif;
+        color: white;
+        background: none;
+    }
+    .TextoMiniYT{
+        font-size: 20px;
+        position: absolute;
+        background: none;
+        width: fit-content;
+        height: fit-content;
+        transform: translateX(37px) translateY(-18px);
+        cursor: pointer;
+    }
+    .MiniYT{
+        width: 35px;
+        height: 35px;
+        background: none;
+        transform: scale(0.9);
+    }
+    .Linkyt{
+        background: none;
+        width: fit-content;
+        height: fit-content;
+    }
+    .PesquisaInputBox{
+        display: inline-flex;
+        background: none;
+    }
+    .Pesquisa{
+        width: 30vw;
+        height: 21px;
+        color: white;
+        background: rgb(37, 37, 37);
+        outline: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px;
+        margin-right: 15px;
+    }
+    .BotaoPesquisaCover{
+        position: relative;
+        background: lightgray;
+        height: 25px;
+        width: 50px;
+    }
+    .BotaoPesquisa{
+        height: 26.5px;
+        width: 55px;
+        outline: none;
+    }
+    #LupaPesquisa{
+        color:white;
+    }
+
+    .ConjuntoDireita{
+        display: inline-flex;
+        height: 30px;
+        width: 130px;
+        background: none;
+        justify-content: space-between;
+        margin-right: 30px;
+        margin-left: 30px;
+        position: relative;
+    }
+    .UserCircle{
+        position: relative;
+        border: 2px solid white;
+        border-radius: 100%;
+        width: 23px;
+        height: 23px;
+        color: lightgray;
+    }
+    #UserImg{
+        position: relative;
+        transform: translateY(2.5px) scale(1);
+        background: none;
+    }
+    #Sino{
+        position: relative;
+        transform: scale(1.5) translateY(4.5px) translateX(5px);
+        background: none;
+        color: lightgray;
+        height: 23px;
+        width: 23px;
+    }
+    #Camera{
+        position: relative;
+        transform: scale(1.5) translateY(3px) translateX(5px);
+        background: none;
+        color: lightgray;
+        height: 10px;
+        width: 23px;
+    }
+    .CameraA{
+        background: none;
+        width: fit-content;
+        height: 5px;
+    }
+    /* Ícones da barra de cima */
+    /* Slider do lado */
+    .SideSlider{
+        position: absolute;
+        background: #2c2c2c;
+        top: 0%;
+        left: -250px;
+        border-right: 2px solid #1f1f1f;
+        width: 250px;
+        height: 100%;
+        animation: 1.5s ease-in-out;
+        transition-delay: 1.4s;
+        transition: 1.5s ease-in-out;
+        overflow: hidden;
+        border-bottom-right-radius: 50px;
+        border-bottom: 0.1px solid black;
+    }
+    .CoverSideSliderBTN2{
+        position: relative;
+        height: 53px;
+        width: 100%;
+        background: none;
+        border-bottom: 2px solid #1f1f1f;
+    }
+    #Listras2{
+        margin-left: 18px;
+        position: relative;
+        transform: scale(1.8) translateY(10px) translateX(110px) translateZ(0);
+        color: white;
+        cursor: default;
+    }
+    .SliderBTN{
+        width: 25px;
+        height: 24px;
+        position: absolute;
+        background: none;
+        outline: transparent none;
+        transform: translateX(178.5px) translateY(15px) translateZ(1ch);
+    }
+    .CoverSideSliderBTN{
+        position: relative;
+        height: 27px;
+        width: fit-content;
+        background: none;
+        margin-right: 25px;
+    }
+
+    .TextoMiniYT2{
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        background: none;
+        width: fit-content;
+        height: fit-content;
+        transform: translateX(37px) translateY(-58px);
+        cursor: pointer;
+    }
+    .MiniYT2{
+        width: 35px;
+        height: 35px;
+        background: none;
+        transform: scale(0.9);
+    }
+    .Linkyt2{
+        background: none;
+        width: fit-content;
+        height: fit-content;
+    }
+    .TextoYtBarraDeCima2{
+        display: inline-flex;
+        font-family: 'Oswald', sans-serif;
+        color: white;
+        background: none;
+        position: absolute;
+        transform: translateY(8.5px) translateX(45px);
+    }
+    .ItensSideSlide{
+        background: none;
+        transform: translateY(38px);
+    }
+    .HomeBox, .ExploreBox, .SubsBox, .BibliotecaBox, .HistoricoBox, .CurtidosBox{
+        width: 100%;
+        height: 45px;
+        background: none;
+        display: inline-flex;
+        cursor: pointer;
+    }
+    .SubsBox{
+        border-bottom: 2px solid #1f1f1f;
+    }
+    .HomeBox:hover, .ExploreBox:hover, .SubsBox:hover, .BibliotecaBox:hover, .HistoricoBox:hover, .CurtidosBox:hover{
+        background: #444444;
+    }
+    #Home, #Explore, #Subs, #Biblioteca, #Historico, #Curtidos{
+        position: relative;
+        color: white;
+        height: fit-content;
+        width: fit-content;
+        transform: scale(2) translateY(7px) translateX(107px);
+        background: none;
+        animation: 1s ease-in-out;
+        transition: 1s ease-in-out;
+    }
+    .HomeText, .ExploreText, .SubsText, .BibliotecaText, .HistoricoText, .CurtidosText{
+        background: none;
+        font-family: 'Oswald';
+        font-size: 20px;
+        color: white;
+        position: relative;
+        transform: translateY(-8px) translateX(40px);
+    }
+
+
+
+    /* Vídeos */
+    .Videos{
+        display: inline-flex;
+        flex-direction: row bottom;
+        flex-flow: row wrap;
+        background: none;
+        height: 90%;
+        width: 96.5%;
+        position: absolute;
+        bottom: 0%;
+        left: 1000%;
+        justify-content:center;
+        animation: 2s ease-in-out;
+        transition: 2s ease-in-out;
+        transition-delay: 1.4s;
+    }
+    .VideoBox{
+        background: none;
+        position: relative;
+        height: 235px;
+        width: 220px;
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 10px;
+        transition: 0.3s ease-in-out;
+        animation: 0.3s ease-in-out;
+    }
+    .VideoBox:hover{
+        margin-top: 0px;
+    }
+    .Miniatura{
+        width: 100%;
+        height: 135px;
+        background: rgb(80, 80, 80);
+        background: linear-gradient(0deg, rgba(18,18,18,1) 0%, rgba(93,93,93,1) 100%);
+        font-family: 'Oswald', sans-serif;
+        font-size: 70px;
+        color: whitesmoke;
+        text-align: center;
+        cursor: default;
+    }
+    .Titulo{
+        font-family: 'Oswald', sans-serif;
+        font-size: 19px;
+        color: whitesmoke;
+        margin-left: 8px;
+        width: fit-content;
+        background: none;
+        cursor: default;
+    }
+    .NomeCanal{
+        position: relative;
+        width: fit-content;
+        font-family: 'Oswald', sans-serif;
+        color: whitesmoke;
+        background: none;
+        transform: translateX(42px) translateY(-37px);
+        cursor: default;
+    }
+    .Visualização{
+        position: relative;
+        width: fit-content;
+        font-family: 'Oswald', sans-serif;
+        color: whitesmoke;
+        background: none;
+        transform: translateY(-45px) translateX(10px);
+        cursor: default;
+    }
+    .UserCircle2{
+        position: relative;
+        border: 2px solid white;
+        border-radius: 100%;
+        width: 23px;
+        height: 23px;
+        color: lightgray;
+        transform: translateY(5px) translateX(7px);
+        background: none;
+        cursor: default;
+    }
+    #UserImg2{
+        position: relative;
+        transform: translateY(2px) translateX(4px) scale(1);
+        background: none;
+        cursor: default;
+    }
+}
+/* Responsividade pra Tablet */
+@media screen and (max-width: 768px){
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    .ItensBaixo{
+        display: none;
+    }
+    .FrontSliderBG{
+        width: 100%;
+        height: 100vh;
+        transition: 1.3s ease-in-out;
+        background: #282828;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .YtLogo1{
+        background: none;
+        position: relative;
+        transform: scale(0.25);
+        left: 0%;
+        margin-bottom: -25px;
+        overflow-y: visible;
+    }
+    .YtText1{
+        font-family: 'Oswald';
+        background: none;
+        color: white;
+        font-size: 50px;
+        position: relative;
+        margin-bottom: -120px;
+        top: -255px;
+        cursor: default;
+    }
+    #SetaCima.fas.fa-angle-up, .fa-angle-up::before{
+        height: fit-content;
+        width: fit-content;
+    }
+    #SetaCima{
+        width: 100%;
+        height: 100%;
+        color: white;
+        transform: scale(2) translateX(0.2px);
+        position: relative;
+        background: none;
+    }
+    .BotaoCima{
+        width: 50px;
+        height: 50px;
+        outline: none;
+        position: relative;
+        top: -130px;
+        background: none;
+        border-radius: 50%;
+    }
+    .TextoYtBarraDeCima{
+        transform: translateX(-20px);
+    }
+}
+
+@media screen and (max-width: 460px){
+    .BarraBaixo{
+        position: -webkit-sticky;
+        height: 50px;
+        width: 100%;
+        bottom: 0%;
+        transform: translateY(50px);
+        z-index: 2;
+        border-top: 2px solid #1f1f1f;
+        background: #2c2c2c;
+        overflow-x: hidden;
+        transition: 2s ease-in-out;
+        transition-delay: 1s;
+    }
+    .BarraBaixoBox{
+        overflow-x: hidden;
+        position: fixed;
+        height: 50px;
+        width: 100%;
+        bottom: 0%;
+        transform: translateX(-8px);
+        z-index: 2;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        display: inline-flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    .ItensBaixo{
+        display: inline-flex;
+        background: none;
+        overflow-y: hidden;
+        overflow-x: visible;
+        justify-content: space-between;
+        width: 430px;
+        transform: translateX(-2px);
+    }
+
+    .HomeBoxBaixo, .ExploreBoxBaixo, .SubsBoxBaixo, .BibliotecaBoxBaixo{
+        color: white;
+        font-family: 'Oswald', sans-serif;
+        background: none;
+        text-align: center;
+        width: 60px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .HomeBoxBaixo{
+        margin-left: 1px;
+        width: 60px;
+        align-items: center;
+    }
+    .ExploreBoxBaixo{
+        margin-left: -10px;
+    }
+    .BibliotecaBoxBaixo{
+        margin-right: 20px;
+        margin-top: 1px;
+    }
+    #HomeBaixo, #ExploreBaixo, #SubsBaixo, #BibliotecaBaixo{
+        background: none;
+        transform: scale(1.4) translateY(1px) translateX(0px);
+        margin: 0;
+        border: 0;
+        padding: 0;
+    }
+    .HomeTextBaixo, .ExploreTextBaixo, .SubsTextBaixo, .BibliotecaTextBaixo{
+        background: none;
+        cursor: default;
+        transform: translateY(-17px)
+    }
+    .MaisBaixo{
+        background: none;
+        font-family: 'Oswald', sans-serif;
+        font-size: 40px;
+        transform:translateY(-59px) translateX(0.2px);
+        cursor: default;
+    }
+    .UserCircleBaixo{
+        position: relative;
+        border: 2px solid white;
+        border-radius: 100%;
+        width: 23px;
+        height: 23px;
+        color: lightgray;
+        transform: translateX(15px)
+    }
+    .SubsBoxBaixo{
+        transform: translateX(23px)
+    }
+    .BibliotecaBoxBaixo{
+        transform: translateX(20px);
+    }
+    .UploadBaixo{
+        background: none;
+        font-family: 'Oswald', sans-serif;
+        font-size: 16px;
+        cursor: default;
+        color: white;
+        position: absolute;
+        top:10px;
+        left: -8.5px;
+    }
+
+    .BotaoCima{
+        transform: translateY(0px);
+    }
+    .YtLogo1{
+        margin-left: -25px;
+    }
+    .SideSlider{
+        transform: translateX(-70px);
+    }
+    .CoverSideSliderBTN{
+        display: none;
+    }
+    .ConjuntoDireita{
+        display: none;
+    }
+    .TextoYtBarraDeCima{
+        transform: translateX(-100px);
+    }
+    .Pesquisa{
+        width: 200px;
+    }
+    .PesquisaInputBox{
+        transform: translateX(25px);
+    }
+    .VideoBox{
+        transform: scale(1.3) translateY(50px) translateX(-10px);
+        margin-bottom: 50px;
+        position: static;
+    }
+    .Videos{
+        flex-direction: row bottom;
+    }
+
+    .HomeBoxBaixo:hover, .ExploreBoxBaixo:hover, .SubsBoxBaixo:hover, .BibliotecaBoxBaixo:hover, .HistoricoBoxBaixo:hover{
+        background: #444444;
+    }
+}
